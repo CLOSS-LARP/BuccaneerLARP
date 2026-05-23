@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="バッカニアLARP 2027『空飛ぶカジノの黄昏』プレイヤー向け特設サイト。空飛ぶカジノ船バッカニア号での夜会ルール、システム、キャラクター紹介。">
+  <title>バッカニアLARP 2027：空飛ぶカジノの黄昏 | プレイヤー案内サイト</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Music/Ambient Trigger Placeholder (Optional/Micro-interaction) -->
+  <div class="sound-control" id="ambient-toggle" title="アンビエント音の切り替え">
+    <span class="sound-icon">🔔</span>
+    <span class="sound-text">SOUND OFF</span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <span class="logo-gold">BUCCANEER</span> <span class="logo-white">LARP 2027</span>
+    </div>
+    <nav>
+      <a href="#hero" class="nav-link active">TOP</a>
+      <a href="#lore" class="nav-link">LORE</a>
+      <a href="#system" class="nav-link">SYSTEM</a>
+      <a href="#characters" class="nav-link">CHARACTERS</a>
+      <a href="#checklist" class="nav-link">CHECKLIST</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">PLAYER GUIDE & SPECIAL WEB</div>
+      <h1 class="hero-title">空飛ぶカジノの黄昏</h1>
+      <p class="hero-subtitle">バッカニアLARP 2027 — 一夜限りの、運命のポーカーゲームへようこそ。</p>
+      <div class="hero-buttons">
+        <a href="#lore" class="btn btn-gold">物語の背景へ</a>
+        <a href="#characters" class="btn btn-outline">キャラクターを選ぶ</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL DOWN</span>
+      <div class="arrow"></div>
+    </div>
+  </section>
+
+  <!-- Lore Section -->
+  <section id="lore" class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">物語の背景</h2>
+      <p class="section-subtitle">The Celestial Casino & The Twilight of Fates</p>
+    </div>
+    <div class="lore-grid">
+      <div class="lore-card">
+        <h3>空を往く、欲望と救済の揺りかご</h3>
+        <p>
+          雲海の上を静かに巡航する、実験的カジノ飛行船「バッカニア号」。<br>
+          ここでは毎夜、巨額のチップだけでなく、「誰かの秘密」「未来の権利」「隠された因縁」までもがポーカーカードを通じて取引されています。
+        </p>
+        <p>
+          今宵集うのは、病に蝕まれた老いた豪商、父の正体を知らぬ陽気な旅人、冷徹な復讐を誓う船長、そして運命の軌道を見届ける天文学者。それぞれの想いが、夜明け前のテーブルで静かに激突します。
+        </p>
+      </div>
+      <div class="lore-card lore-glass">
+        <h3>Play to Contribute — 物語への貢献</h3>
+        <p class="highlight-text">
+          「勝つことだけが、この夜会の目的ではありません。」
+        </p>
+        <p>
+          バッカニアLARPでは、すべてのプレイヤーが物語の共同創造主です。あなたのキャラクターが「敗北」の美学を演じること、他人のドラマを引き立てるためにあえてチップを譲渡すること、それらすべてが価値ある瞬間になります。<br>
+          勝ち負けを超え、テーブル全体で「最高のドラマ」を演出する挑戦を楽しんでください。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- System Section -->
+  <section id="system" class="section-container bg-dark-navy">
+    <div class="section-header">
+      <h2 class="section-title">ゲームシステム</h2>
+      <p class="section-subtitle">How to Play in the Casino of Destiny</p>
+    </div>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="system-icon">🪙</div>
+        <h3>カジノチップの流通</h3>
+        <p>富裕層（100）、中間層（50）、貧困層（10）と、キャラクターの階層によって初期チップ数が異なります。チップはポーカーの賭け金だけでなく、情報の買収や交渉の対価として自由に使えます。</p>
+      </div>
+      <div class="system-card">
+        <div class="system-icon">📜</div>
+        <h3>噂カードの伝播</h3>
+        <p>あなたは自分だけの秘密や船内の噂を持っています。この噂は、交渉や会話の材料として他PCへ売買できます。一度話したり見せたりした情報は、相手の記憶に残る形で伝わっていきます。</p>
+      </div>
+      <div class="system-card">
+        <div class="system-icon">⚖️</div>
+        <h3>機知の決闘 (Duel of Wits)</h3>
+        <p>言葉による致命的な対立や、どうしても譲れない交渉が発生した場合の解決手段です。GMの立ち会いのもと、コイントスによる3本勝負（2勝先取）を行い、勝者の要求が通ります。敗者はこれを受け入れ、劇的にロールプレイします。</p>
+      </div>
+      <div class="system-card">
+        <div class="system-icon">🕵️</div>
+        <h3>隠密行動 (Covert Action)</h3>
+        <p>他PCの懐を探ったり、手紙を盗み見たりするアクション。GMに秘密裏に宣言し、ダイス判定（1D6）を行います。出目により成功・失敗が決定し、隠された真実が暴かれるかもしれません。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" class="section-container">
+    <div class="section-header">
+      <h2 class="section-title">登場人物</h2>
+      <p class="section-subtitle">The Key Players of Tonight's Showdown</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">すべて</button>
+      <button class="filter-btn" data-filter="rich">富裕層 (100チップ)</button>
+      <button class="filter-btn" data-filter="middle">中間層 (50チップ)</button>
+      <button class="filter-btn" data-filter="poor">貧困層 (10チップ)</button>
+    </div>
+
+    <!-- Character Cards Grid -->
+    <div class="characters-grid">
+      
+      <!-- P001 Camus -->
+      <div class="char-card" data-tier="rich">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P001</div>
+            <h3>カミュ</h3>
+            <p class="char-archetype">風変わりな探検家</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-rich">富裕層 (100)</span>
+              <h3>カミュ</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 好奇心旺盛で行動力抜群の探検家。バッカニア号の贅沢な施設よりも、船内の構造や「隠された何か」に強い興味を抱いています。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 船内の秘密（金庫室など）の謎解きを楽しみつつ、他のプレイヤーと情報交換を行い物語を推進します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P002 JB -->
+      <div class="char-card" data-tier="rich">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P002</div>
+            <h3>ジェイビー</h3>
+            <p class="char-archetype">老いた豪商</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-rich">富裕層 (100)</span>
+              <h3>ジェイビー</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 巨万の富を築いた引退間近の豪商。病に侵されており、人生の「最後のゲーム」としてこのテーブルに着いています。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 物語上きわめて重要な役割を担います。自身の財産を「ある男」へ美しく敗北（Play to Lose）して託す挑戦を行います。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P003 Rinne -->
+      <div class="char-card" data-tier="poor">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P003</div>
+            <h3>リンネ</h3>
+            <p class="char-archetype">陽気な旅人</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-poor">貧困層 (10)</span>
+              <h3>リンネ</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 飄々とした軽快な口調で振る舞う青年。借金まみれで、この夜会で一攫千金（または借金の帳消し）を目論んでいます。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 逆境の中、一攫千金を夢見て強気に攻めるスリルを楽しんでください。宿命の糸がやがてジェイビーと結びつきます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P004 fuzy_you -->
+      <div class="char-card" data-tier="middle">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P004</div>
+            <h3>フージー</h3>
+            <p class="char-archetype">観客（エスペクタドール）</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-middle">中間層 (50)</span>
+              <h3>フージー</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> カジノの喧騒を最も愛するゲーム観戦者。ポーカーテーブルを囲み、勝負の熱狂や人間たちの駆け引きを煽ることを好みます。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> テーブル全体の盛り上げ役（観客）として、勝負中の野次や興奮を演出して場を大きく活性化させます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P005 remna -->
+      <div class="char-card" data-tier="middle">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P005</div>
+            <h3>レムナ</h3>
+            <p class="char-archetype">気さくな情報屋</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-middle">中間層 (50)</span>
+              <h3>レムナ</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 社交的で誰にでもフランクに話しかける情報屋。しかしその裏では、乗客たちの致命的な秘密を握り、密売の機会を伺っています。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 秘密の仲介者として、さまざまな情報を買い、適切な人物（ジェイビーやでぃーさん）に高く売る交渉劇を楽しみます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P006 enpitsu -->
+      <div class="char-card" data-tier="middle">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P006</div>
+            <h3>えんぴつ (運営)</h3>
+            <p class="char-archetype">カジノ店員</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-middle">中間層 (50)</span>
+              <h3>えんぴつ (運営)</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> カジノ船で働くきびきびとした給仕店員。乗客が快適にプレイできるよう優しく飲み物などをサーブします。（運営PC）</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 運営兼プレイヤーとして、初心者プレイヤーの補助や、情報・アイテムの配布といった現場進行の補佐を行います。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P007 dsan -->
+      <div class="char-card" data-tier="rich">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P007</div>
+            <h3>でぃーさん</h3>
+            <p class="char-archetype">非番の飛空挺船長</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-rich">富裕層 (100)</span>
+              <h3>でぃーさん</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 威風堂々としたベテラン飛行船長。ポーカーテーブルでは豪快なベットを見せ、冷徹な視線でゲームを支配します。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> ジェイビーに対する強烈な恨み（復讐）を胸に秘めています。ジェイビーを破滅させ、遺産の譲渡を阻止するドラマを熱演します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P008 hinohana -->
+      <div class="char-card" data-tier="middle">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P008</div>
+            <h3>緋乃花</h3>
+            <p class="char-archetype">歴戦の冒険者</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-middle">中間層 (50)</span>
+              <h3>緋乃花</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 数々の秘境を生き抜いてきた勝気な女性冒険者。今回は未踏の地「アエリドール」への探検に出資してくれるパトロン（富裕層）を探しています。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 手持ちの「探検地図」を交渉材料に、ジェイビーやカミュなど富裕層とのパトロン契約獲得交渉に挑戦します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P009 takimidori -->
+      <div class="char-card" data-tier="middle">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P009</div>
+            <h3>多季碧</h3>
+            <p class="char-archetype">静かなる天文学者</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-middle">中間層 (50)</span>
+              <h3>多季碧</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 星々の運行を静かに観測する学者。カジノの喧騒からは距離を置き、人間の複雑な運命の流れを面白そうに観察しています。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 観察者として、窮地にあるPC（ジェイビーやリンネなど）をひそかに支援し、彼らのドラマを引き立てる挑戦を行います。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- P010 towako -->
+      <div class="char-card" data-tier="middle">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-front-bg" style="background-image: url('assets/card_back.png');"></div>
+            <div class="card-badge">P010</div>
+            <h3>とわこ</h3>
+            <p class="char-archetype">ヴェールの悲劇女性</p>
+            <span class="click-to-flip">CLICK TO REVEAL</span>
+          </div>
+          <div class="card-back">
+            <div class="card-back-header">
+              <span class="badge-middle">中間層 (50)</span>
+              <h3>とわこ</h3>
+            </div>
+            <div class="card-back-body">
+              <p class="role-desc"><strong>表向きの顔:</strong> 黒いヴェールで顔を隠した、物静かで品のある謎の女性。他の人に関与されないよう、テーブルの端で静かにポーカーを楽しんでいます。</p>
+              <p class="recommend"><strong>プレイ方針:</strong> 自身の正体を暴かれることなく、夜会を自分のペースで無事に乗り切ることに挑戦します。ジェイビーの境遇に親近感を抱きます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Checklist Section -->
+  <section id="checklist" class="section-container bg-dark-navy">
+    <div class="section-header">
+      <h2 class="section-title">事前準備チェックリスト</h2>
+      <p class="section-subtitle">Prepare Yourself for the Twilight Showdown</p>
+    </div>
+    <div class="checklist-container">
+      <p class="checklist-info">※各項目をクリックして準備状況を記録できます。状態はブラウザに保存されます。</p>
+      
+      <div class="checklist-item" id="task-1">
+        <div class="checkbox"></div>
+        <div class="checklist-text">
+          <h4>1. キャラクターハンドアウトの読み込み</h4>
+          <p>自分のキャラクター設定（表の顔・真実）をしっかり理解し、どのような人物か想像しましょう。</p>
+        </div>
+      </div>
+
+      <div class="checklist-item" id="task-2">
+        <div class="checkbox"></div>
+        <div class="checklist-text">
+          <h4>2. 挑戦目標（物語への貢献目標）の確認</h4>
+          <p>達成すべき「挑戦目標（最優先・任意）」を確認してください。勝ち負けよりも、葛藤やドラマの演出が重要です。</p>
+        </div>
+      </div>
+
+      <div class="checklist-item" id="task-3">
+        <div class="checkbox"></div>
+        <div class="checklist-text">
+          <h4>3. 関係の深いキャラクターの把握</h4>
+          <p>ハンドアウトの「他のキャラクターとの関係」を読み、ゲーム中に誰にアプローチすべきかを頭に入れましょう。</p>
+        </div>
+      </div>
+
+      <div class="checklist-item" id="task-4">
+        <div class="checkbox"></div>
+        <div class="checklist-text">
+          <h4>4. 初期チップ枚数と配布物の確認</h4>
+          <p>自身の初期所持チップ（100 / 50 / 10枚）や、配布される噂カード、物理アイテムの情報を確認します。</p>
+        </div>
+      </div>
+
+      <div class="checklist-item" id="task-5">
+        <div class="checkbox"></div>
+        <div class="checklist-text">
+          <h4>5. 安全ルールの理解</h4>
+          <p>現実の問題が発生したときの「タイムアウト！」コール、身体接触の禁止、ハラスメントの禁止ルールを厳守しましょう。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>バッカニアLARP 2027：空飛ぶカジノの黄昏</p>
+    <p class="copyright">バッカニアLARP 2027 © CLOSS</p>
+  </footer>
+
+  <!-- Script Link -->
+  <script src="script.js"></script>
+</body>
+</html>
